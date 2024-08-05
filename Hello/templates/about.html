@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block home_btn %}nav-link{% endblock home_btn %}
+
+{% block about_btn %}nav-link active{% endblock about_btn %}
+
+{% block contact_btn %}nav-link{% endblock contact_btn %}
+
+{% block body %}
+
+    <div class="container-fluid position-relative" style="padding: 0;">
+        <img src="/static/img/about.jpg" 
+        style="
+            width      : 100%;
+            height     : 100vh;
+            object-fit : cover;
+            position   : absolute;
+            top        : 0;
+            left       : 0;
+            z-index    : -1;
+        ">
+        <div class="position-absolute top-0 start-0 end-0 bottom-0" 
+        style="
+            padding          : 20px;
+            box-sizing       : border-box;
+            border-radius    : 20px;
+            margin           : 20px;
+            color            : white;
+        ">
+            <h1 style="
+                font-size        : 100px;
+                background-color : rgba(0, 0, 0, 0.5);
+                border-radius    : 20px;
+                padding          : 20px;
+            ">
+                About Us:
+            </h1>
+            <h2 style="
+                background-color : rgba(0, 0, 0, 0.5);
+                border-radius    : 20px;
+                padding          : 20px;
+            ">
+                At Sudev IceCreams, we are passionate about delivering exceptional ice cream products and services that exceed our customers' expectations.
+                Founded in 1969, our dedicated team combines tradition with innovation to craft premium ice cream that delights and satisfies.
+                We specialize in a wide range of artisanal flavors, from classic favorites to unique seasonal creations, using only the finest ingredients.
+                Our mission is to bring joy through our delicious ice creams while upholding the highest standards of quality and service.
+                We believe in creating memorable experiences with every scoop, and we are committed to continuously improving our offerings and nurturing lasting relationships with our customers.
+                Thank you for choosing Sudev IceCreams—we look forward to sharing our passion for ice cream with you!
+            </h2>
+        </div>
+    </div>
+{% endblock body %}
